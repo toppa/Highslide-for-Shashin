@@ -21,7 +21,7 @@ This plugin has a split license:
 
 * All files in the directory shashin/Public/Display/highslide fall under [these license terms](http://www.highslide.com/#license). **It is important to note that Highslide is free for non-commercial use only.** Please follow the license terms link for further information.
 * All other files are GPLv2
-* Based on this entry in the GPL FAQ, it is my understanding that distributing this plugin under a split license is valid under the terms of GPLv2, as Shashin can be configured to work with other viewers.
+* Based on [this entry in the GPL FAQ](http://www.gnu.org/licenses/gpl-faq.html#GPLAndPlugins), it is my understanding that distributing this plugin under a split license is valid under the terms of GPLv2, as Highslide functions as an optional add-on to Shashin, and is invoked through 2 lines of code (one for Highslide's .js file and one for its .css file).
 
 Installation
 ------------
@@ -36,7 +36,9 @@ Installation
 **First time installation**
 
 1. If you don't have Shashin yet, download and activate [Shashin](http://wordpress.org/extend/plugins/shashin/).
-1. Then download and activate _Highslide for Shashin_ just like any other plugin
+1. Download [Highslide for Shashin](https://github.com/downloads/toppa/Highslide-for-Shashin/highslide-for-shashin.zip)
+1. Unzip it, and use FTP to copy the "highslide-for-shashin" folder to your plugin directory. See the WordPress [Manual Plugin Installation instructions](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation) if you need more details.
+1. Activate _Highslide for Shashin_ on your plugin admin page
 1. Go to the Shashin Settings Menu and select the new option to use Highslide as the viewer
 1. Go to the _Highslide for Shashin_ settings menu to configure Highslide as desired
 
