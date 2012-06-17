@@ -3,9 +3,8 @@ Highslide for Shashin
 
 Contributors: toppa
 Donate link: http://www.toppa.com/highslide-for-shashin-wordpress-plugin
-Tags: Picasa, Highslide, Twitpic, Youtube, image, images, photo, photos, picture, pictures, gallery, widget, widgets, video
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.4
 Stable tag: 1.0
 License: Split - GPLv2 or later; Creative Commons for Highslide itself - see below
 
@@ -51,4 +50,4 @@ For troubleshooting help, please [post a comment on my latest support post](http
 Changelog
 ---------
 
-= 1.0 = First release
+**1.0:** First release
