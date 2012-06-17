@@ -1,4 +1,6 @@
-=== Shashin ===
+Highslide for Shashin
+=====================
+
 Contributors: toppa
 Donate link: http://www.toppa.com/highslide-for-shashin-wordpress-plugin
 Tags: Picasa, Highslide, Twitpic, Youtube, image, images, photo, photos, picture, pictures, gallery, widget, widgets, video
@@ -9,7 +11,8 @@ License: Split - GPLv2 or later; Creative Commons for Highslide itself - see bel
 
 _Highslide for Shashin_ allows you to use Highslide with the Shashin plugin for WordPress.
 
-== Description ==
+Description
+-----------
 
 **Installation of [Shashin](http://wordpress.org/extend/plugins/shashin/) is required. Please download and activate it before installing _Highslide for Shashin_.**
 
@@ -21,7 +24,8 @@ This plugin has a split license:
 * All other files are GPLv2
 * Based on this entry in the GPL FAQ, it is my understanding that distributing this plugin under a split license is valid under the terms of GPLv2, as Shashin can be configured to work with other viewers.
 
-== Installation ==
+Installation
+------------
 
 **Requirements**
 
@@ -37,15 +41,14 @@ This plugin has a split license:
 1. Go to the Shashin Settings Menu and select the new option to use Highslide as the viewer
 1. Go to the _Highslide for Shashin_ settings menu to configure Highslide as desired
 
-== Frequently Asked Questions ==
+Frequently Asked Questions
+--------------------------
 
 Please go to [the _Highslide for Shashin_ page on my site](http://www.toppa.com/highslide-for-shashin-wordpress-plugin) for a Usage Guide and other information.
 
 For troubleshooting help, please [post a comment on my latest support post](http://www.toppa.com/category/wordpress-plugins/support/).
-== Screenshots ==
 
-1. A Highslide slideshow
-
-== Changelog ==
+Changelog
+---------
 
 = 1.0 = First release
