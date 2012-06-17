@@ -2,10 +2,8 @@
 
 class HighslideForShashin {
     private $version = '1.0';
-    private $autoLoader;
 
-    public function __construct(ToppaAutoLoader $autoLoader) {
-        $this->autoLoader = $autoLoader;
+    public function __construct() {
     }
 
     public function getVersion() {
@@ -14,7 +12,7 @@ class HighslideForShashin {
 
     public function install() {
         try {
-            $container = new HfsContainer($this->autoLoader);
+            $container = new HfsContainer();
             $installer = $container->getInstaller($this->version);
             $status = $installer->run();
             return $status;
@@ -33,7 +31,7 @@ class HighslideForShashin {
 
     public function runtimeUpdate() {
         try {
-            $container = new HfsContainer($this->autoLoader);
+            $container = new HfsContainer();
             $installer = $container->getInstaller($this->version);
             $status = $installer->runtimeUpdate();
             return $status;
@@ -56,7 +54,7 @@ class HighslideForShashin {
 
     public function displaySettingsMenu() {
         try {
-            $container = new HfsContainer($this->autoLoader);
+            $container = new HfsContainer();
             $settingsMenu = $container->getSettingsMenu();
             echo $settingsMenu->run();
         }
@@ -68,7 +66,7 @@ class HighslideForShashin {
 
     public function displayPublicHeadTags() {
         try {
-            $container = new HfsContainer($this->autoLoader);
+            $container = new HfsContainer();
             $headTags = $container->getHeadTags($this->version);
             $headTags->run();
         }

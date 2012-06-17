@@ -5,8 +5,8 @@ class HfsContainer extends Lib_ShashinContainer {
     private $settingsMenu;
     private $headTags;
 
-    public function __construct($autoLoader) {
-        parent::__construct($autoLoader);
+    public function __construct() {
+        parent::__construct();
     }
 
     public function getInstaller($version) {

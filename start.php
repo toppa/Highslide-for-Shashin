@@ -17,7 +17,7 @@ if (file_exists($hfsAutoLoaderPath)) {
     require_once($hfsAutoLoaderPath);
     $hfsToppaAutoLoader = new ToppaAutoLoaderWp('/toppa-plugin-libraries-for-wordpress');
     $hfsAutoLoader = new ToppaAutoLoaderWp('/highslide-for-shashin');
-    $hfs = new HighslideForShashin($hfsAutoLoader);
+    $hfs = new HighslideForShashin();
     $hfs->run();
 }
 
@@ -60,7 +60,7 @@ function hfsActivate() {
         require_once($autoLoaderPath);
         $toppaAutoLoader = new ToppaAutoLoaderWp('/toppa-plugin-libraries-for-wordpress');
         $hfsAutoLoader = new ToppaAutoLoaderWp('/highslide-for-shashin');
-        $hfs = new HighslideForShashin($hfsAutoLoader);
+        $hfs = new HighslideForShashin();
         $status = $hfs->install();
 
         if (is_string($status)) {
@@ -70,6 +70,6 @@ function hfsActivate() {
 }
 
 function hfsCancelActivation($message) {
-    deactivate_plugins(basename(__FILE__));
+    deactivate_plugins('highslide-for-shashin/start.php');
     wp_die($message);
 }
