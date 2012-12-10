@@ -5,7 +5,7 @@ Contributors: toppa
 Donate link: http://www.toppa.com/highslide-for-shashin-wordpress-plugin
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: Split - GPLv2 or later; Creative Commons for Highslide itself - see below
 
 _Highslide for Shashin_ allows you to use Highslide with the Shashin plugin for WordPress.
@@ -52,4 +52,5 @@ For troubleshooting help, please [post a comment on my latest support post](http
 Changelog
 ---------
 
+**1.1:** Bug fix: deactivate if Shashin is deactivated (to prevent WP from locking up)
 **1.0:** First release

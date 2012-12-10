@@ -4,11 +4,12 @@ Plugin Name: Highslide for Shashin
 Plugin URI: http://www.toppa.com/highslide-for-shashin-wordpress-plugin/
 Description: A plugin for integrating Highslide with Shashin.
 Author: Michael Toppa
-Version: 1.0
+Version: 1.1
 Author URI: http://www.toppa.com
 */
 
 $hfsAutoLoaderPath = dirname(__FILE__) . '/../toppa-plugin-libraries-for-wordpress/ToppaAutoLoaderWp.php';
+add_action('admin_init', 'hfsDeactivateIfNeeded');
 add_action('wpmu_new_blog', 'hsfActivateForNewNetworkSite');
 register_activation_hook(__FILE__, 'hfsActivate');
 load_plugin_textdomain('hfs', false, basename(dirname(__FILE__)) . '/Languages/');
@@ -19,6 +20,13 @@ if (file_exists($hfsAutoLoaderPath)) {
     $hfsAutoLoader = new ToppaAutoLoaderWp('/highslide-for-shashin');
     $hfs = new HighslideForShashin();
     $hfs->run();
+}
+
+function hfsDeactivateIfNeeded() {
+    include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+    if (!is_plugin_active('shashin/start.php')) {
+        deactivate_plugins('highslide-for-shashin/start.php');
+    }
 }
 
 function hfsActivateForNewNetworkSite($blog_id) {
