@@ -1,3 +1,13 @@
+**Highslide for Shashin is no longer supported**
+
+As of Shashin 3.3, it is no longer compatible with Shashin. Highslide is no longer under development (there hasn't been a new version in 2 years) and it's license is not compatible with the WordPress GPL requirements. Shashin 3.3 comes with [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/) which is under active development, is GPL compliant, and has the same capabilities (and more) as Highslide.
+
+I'm keeping this GitHub repository live in case anyone may want to re-use some of the code for other purposes.
+
+The old readme file is below.
+
+***
+
 Highslide for Shashin
 =====================
 
